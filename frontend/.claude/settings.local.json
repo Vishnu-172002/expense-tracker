@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Read(//c/Murugavel Vishnu Priya/Claude AI/expense-tracker/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
