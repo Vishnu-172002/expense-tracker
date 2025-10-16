@@ -147,7 +147,7 @@ export const deleteTransactionController = async (req, res) => {
     }
 
     const transactionArr = user.transactions.filter(
-      (transaction) => transaction._id === transactionId
+      (transaction) => transaction._id !== transactionId
     );
 
     user.transactions = transactionArr;
