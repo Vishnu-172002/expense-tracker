@@ -147,12 +147,12 @@ export const deleteTransactionController = async (req, res) => {
     }
 
     const transactionArr = user.transactions.filter(
-      (transaction) => transaction._id !== transactionId
+      (transaction) => transaction._id.toString() !== transactionId
     );
 
     user.transactions = transactionArr;
 
-    user.save();
+    await user.save();
 
     // await transactionElement.remove();
 
